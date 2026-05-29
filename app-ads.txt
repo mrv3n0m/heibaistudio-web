@@ -1,0 +1,9 @@
+# Heibai Studio — app-ads.txt
+# Authorizes ad networks to sell inventory for our apps.
+# Reference: https://support.google.com/admob/answer/9786958
+#
+# TODO: Replace pub-XXXXXXXXXXXXXXXX with your real AdMob Publisher ID
+# Found in: AdMob → Account → Publisher ID
+#
+# Atlas by Heibai (com.heibaistudio.atlas)
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
