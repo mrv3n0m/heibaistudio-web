@@ -1,18 +1,28 @@
 <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Icon mark: rounded square split vertically — left half white (白), right half void (黑) -->
-  <defs>
-    <clipPath id="left-half">
-      <rect x="0" y="0" width="100" height="200"/>
-    </clipPath>
-    <rect id="shape" x="8" y="8" width="184" height="184" rx="44"/>
-  </defs>
 
-  <!-- Border (full shape) -->
-  <rect x="8" y="8" width="184" height="184" rx="44" stroke="white" stroke-width="12" fill="none"/>
+  <!-- Ears (behind head) -->
+  <circle cx="52"  cy="52"  r="26" fill="#111111"/>
+  <circle cx="148" cy="52"  r="26" fill="#111111"/>
 
-  <!-- Left half filled white -->
-  <rect x="8" y="8" width="184" height="184" rx="44" fill="white" clip-path="url(#left-half)"/>
+  <!-- Head -->
+  <circle cx="100" cy="112" r="74" fill="white"/>
 
-  <!-- Vertical divider line -->
-  <line x1="100" y1="8" x2="100" y2="192" stroke="#0f0f0f" stroke-width="12"/>
+  <!-- Eye patches -->
+  <ellipse cx="74"  cy="104" rx="22" ry="26" fill="#111111" transform="rotate(-12 74 104)"/>
+  <ellipse cx="126" cy="104" rx="22" ry="26" fill="#111111" transform="rotate(12 126 104)"/>
+
+  <!-- Eyes (white) -->
+  <circle cx="74"  cy="105" r="10" fill="white"/>
+  <circle cx="126" cy="105" r="10" fill="white"/>
+
+  <!-- Pupils -->
+  <circle cx="76"  cy="107" r="6" fill="#111111"/>
+  <circle cx="128" cy="107" r="6" fill="#111111"/>
+
+  <!-- Nose -->
+  <ellipse cx="100" cy="126" rx="10" ry="7" fill="#111111"/>
+
+  <!-- Mouth -->
+  <path d="M92 133 Q100 141 108 133" stroke="#111111" stroke-width="3" stroke-linecap="round" fill="none"/>
+
 </svg>
