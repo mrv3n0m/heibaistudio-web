@@ -138,6 +138,18 @@ body {
   height: 40px;
 }
 
+.app-icon--img {
+  padding: 0;
+  overflow: hidden;
+}
+
+.app-icon--img img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
 /* ── App info ───────────────────────────────────────────────── */
 .app-info {
   flex: 1;
