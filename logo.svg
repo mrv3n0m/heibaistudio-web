@@ -1,8 +1,8 @@
 <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
 
   <!-- Ears (behind head) -->
-  <circle cx="52"  cy="52"  r="26" fill="#111111"/>
-  <circle cx="148" cy="52"  r="26" fill="#111111"/>
+  <circle cx="52"  cy="52"  r="26" fill="#111111" stroke="white" stroke-width="4"/>
+  <circle cx="148" cy="52"  r="26" fill="#111111" stroke="white" stroke-width="4"/>
 
   <!-- Head -->
   <circle cx="100" cy="112" r="74" fill="white"/>
