@@ -47,6 +47,7 @@ body {
   width: 140px;
   height: 140px;
   margin-bottom: 16px;
+  mix-blend-mode: screen;
 }
 
 .wordmark {
