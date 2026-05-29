@@ -1,0 +1,18 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon mark: rounded square split vertically — left half white (白), right half void (黑) -->
+  <defs>
+    <clipPath id="left-half">
+      <rect x="0" y="0" width="100" height="200"/>
+    </clipPath>
+    <rect id="shape" x="8" y="8" width="184" height="184" rx="44"/>
+  </defs>
+
+  <!-- Border (full shape) -->
+  <rect x="8" y="8" width="184" height="184" rx="44" stroke="white" stroke-width="12" fill="none"/>
+
+  <!-- Left half filled white -->
+  <rect x="8" y="8" width="184" height="184" rx="44" fill="white" clip-path="url(#left-half)"/>
+
+  <!-- Vertical divider line -->
+  <line x1="100" y1="8" x2="100" y2="192" stroke="#0f0f0f" stroke-width="12"/>
+</svg>
