@@ -1,28 +1,58 @@
-<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-  <!-- Ears (behind head) -->
-  <circle cx="52"  cy="52"  r="26" fill="#111111" stroke="white" stroke-width="4"/>
-  <circle cx="148" cy="52"  r="26" fill="#111111" stroke="white" stroke-width="4"/>
+  <!-- Left ear -->
+  <polygon points="48,18 138,18 148,88 78,98 38,64" fill="#111111"/>
+  <!-- Left ear inner -->
+  <polygon points="66,28 124,28 132,76 84,84 54,58" fill="#333333"/>
 
-  <!-- Head -->
-  <circle cx="100" cy="112" r="74" fill="white"/>
+  <!-- Right ear -->
+  <polygon points="352,18 262,18 252,88 322,98 362,64" fill="#111111"/>
+  <!-- Right ear inner -->
+  <polygon points="334,28 276,28 268,76 316,84 346,58" fill="#333333"/>
 
-  <!-- Eye patches -->
-  <ellipse cx="74"  cy="104" rx="22" ry="26" fill="#111111" transform="rotate(-12 74 104)"/>
-  <ellipse cx="126" cy="104" rx="22" ry="26" fill="#111111" transform="rotate(12 126 104)"/>
+  <!-- Head (white geometric face) -->
+  <polygon points="
+    110,72
+    290,72
+    362,128
+    382,208
+    358,288
+    298,348
+    200,364
+    102,348
+    42,288
+    18,208
+    38,128
+  " fill="white"/>
 
-  <!-- Eyes (white) -->
-  <circle cx="74"  cy="105" r="10" fill="white"/>
-  <circle cx="126" cy="105" r="10" fill="white"/>
+  <!-- Left eye patch -->
+  <polygon points="48,148 148,108 182,152 168,224 124,252 56,236 28,188" fill="#111111"/>
 
-  <!-- Pupils -->
-  <circle cx="76"  cy="107" r="6" fill="#111111"/>
-  <circle cx="128" cy="107" r="6" fill="#111111"/>
+  <!-- Right eye patch -->
+  <polygon points="352,148 252,108 218,152 232,224 276,252 344,236 372,188" fill="#111111"/>
+
+  <!-- Left eye white area -->
+  <polygon points="68,162 140,128 168,166 156,212 112,234 64,216 44,184" fill="white"/>
+
+  <!-- Right eye white area -->
+  <polygon points="332,162 260,128 232,166 244,212 288,234 336,216 356,184" fill="white"/>
+
+  <!-- Left pupil (blue accent) -->
+  <polygon points="92,170 132,152 152,176 140,204 100,212 76,194" fill="#6366f1"/>
+
+  <!-- Right pupil (blue accent) -->
+  <polygon points="308,170 268,152 248,176 260,204 300,212 324,194" fill="#6366f1"/>
 
   <!-- Nose -->
-  <ellipse cx="100" cy="126" rx="10" ry="7" fill="#111111"/>
+  <polygon points="186,256 200,244 214,256 200,272" fill="#111111"/>
 
   <!-- Mouth -->
-  <path d="M92 133 Q100 141 108 133" stroke="#111111" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M172,278 Q200,298 228,278" stroke="#111111" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+  <!-- Cheek lines (low-poly facet lines on face) -->
+  <line x1="110" y1="72"  x2="48"  y2="148" stroke="#e8e8e8" stroke-width="1.5"/>
+  <line x1="290" y1="72"  x2="352" y2="148" stroke="#e8e8e8" stroke-width="1.5"/>
+  <line x1="38"  y1="128" x2="110" y2="72"  stroke="#e8e8e8" stroke-width="1.5"/>
+  <line x1="362" y1="128" x2="290" y2="72"  stroke="#e8e8e8" stroke-width="1.5"/>
 
 </svg>
