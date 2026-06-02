@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invitación a Atlas by Heibai</title>
+  <link rel="icon" type="image/png" href="../logo.png" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0f0f0f;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: #141414;
+      border: 1px solid #1e1e1e;
+      border-radius: 20px;
+      padding: 32px 24px;
+      max-width: 380px;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .logo { width: 64px; height: 64px; mix-blend-mode: screen; }
+    h1 { font-size: 22px; font-weight: 700; }
+    p  { font-size: 14px; color: #888; line-height: 1.6; }
+    .btn {
+      display: inline-block;
+      background: #fff;
+      color: #000;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 14px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      margin-top: 8px;
+      width: 100%;
+    }
+    .sub { font-size: 12px; color: #444; }
+  </style>
+  <script>
+    // Auto-redirect to the app via deep link
+    window.addEventListener('DOMContentLoaded', function () {
+      const path   = window.location.pathname // /invite/TOKEN
+      const token  = path.split('/').filter(Boolean).pop()
+      if (token) {
+        window.location.href = 'atlas://invite/' + token
+      }
+    })
+  </script>
+</head>
+<body>
+  <div class="card">
+    <img src="../logo.png" alt="Atlas" class="logo" />
+    <h1>Te invitaron a un viaje ✈️</h1>
+    <p>Para unirte al viaje, abrí la app <strong>Atlas by Heibai</strong> en tu teléfono.</p>
+    <a id="open-btn" href="#" class="btn">Abrir en Atlas</a>
+    <p class="sub">Si no tenés la app, descargala gratis en Google Play.</p>
+    <a href="https://play.google.com/store/apps/details?id=com.heibaistudio.atlas"
+       style="font-size:13px; color:#6366f1; text-decoration:none;">
+      Descargar Atlas
+    </a>
+  </div>
+
+  <script>
+    // Set the button href dynamically
+    const path  = window.location.pathname
+    const token = path.split('/').filter(Boolean).pop()
+    if (token) {
+      document.getElementById('open-btn').href = 'atlas://invite/' + token
+    }
+  </script>
+</body>
+</html>
